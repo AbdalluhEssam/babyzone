@@ -61,35 +61,35 @@ class ChildrenModel {
         this.childId});
 
   ChildrenModel.fromJson(Map<String, dynamic> json) {
-    dadPhone = json['dadPhone'];
-    doctorPhone = json['doctorPhone'];
-    dadPhoto = json['dadPhoto'];
-    doctorPhoto = json['doctorPhoto'];
-    dadName = json['dadName'];
-    doctorName = json['doctorName'];
-    id = json['id'];
-    name = json['name'];
-    berathDate = json['berath_date'];
-    gender = json['gender'];
-    entryDate = json['entry_date'];
-    expectioOutDate = json['expectio_out _date'];
-    outDate = json['out_date'];
-    piriorty = json['piriorty'];
-    bloodType = json['blood_type'];
-    jaundiceRatio = json['jaundice_ratio'];
-    jaundiceStatu = json['jaundice_statu'];
-    dadId = json['dad_id'];
-    doctorId = json['doctor_id'];
-    createdAt = json['createdAt'];
-    bloodName = json['blood_name'];
-    bodyTemp = json['body_temp'];
-    atmosphierTemp = json['atmosphier_temp'];
-    bmp = json['bmp'];
-    oxygen = json['oxygen'];
-    wight = json['wight'];
-    entryReason = json['entry_reason'];
-    outReason = json['out_reason'];
-    childId = json['child_id'];
+    dadPhone = json['dadPhone'].toString();
+    doctorPhone = json['doctorPhone'].toString();
+    dadPhoto = json['dadPhoto'].toString();
+    doctorPhoto = json['doctorPhoto'].toString();
+    dadName = json['dadName'].toString();
+    doctorName = json['doctorName'].toString();
+    id = json['id'].toString();
+    name = json['name'].toString();
+    berathDate = json['berath_date'].toString();
+    gender = json['gender'].toString();
+    entryDate = json['entry_date'].toString();
+    expectioOutDate = json['expectio_out _date'].toString();
+    outDate = json['out_date'].toString();
+    piriorty = json['piriorty'].toString();
+    bloodType = json['blood_type'].toString();
+    jaundiceRatio = json['jaundice_ratio'].toString();
+    jaundiceStatu = json['jaundice_statu'].toString();
+    dadId = json['dad_id'].toString();
+    doctorId = json['doctor_id'].toString();
+    createdAt = json['createdAt'].toString();
+    bloodName = json['blood_name'].toString();
+    bodyTemp = json['body_temp'].toString();
+    atmosphierTemp = json['atmosphier_temp'].toString();
+    bmp = json['bmp'].toString();
+    oxygen = json['oxygen'].toString();
+    wight = json['wight'].toString();
+    entryReason = json['entry_reason'].toString();
+    outReason = json['out_reason'].toString();
+    childId = json['child_id'].toString();
   }
 
   Map<String, dynamic> toJson() {
@@ -160,20 +160,20 @@ class ChildModel {
         this.createdAt});
 
   ChildModel.fromJson(Map<String, dynamic> json) {
-    id = json['id'];
-    name = json['name'];
-    berathDate = json['berath_date'];
-    gender = json['gender'];
-    entryDate = json['entry_date'];
-    expectioOutDate = json['expectio_out _date'];
-    outDate = json['out_date'];
-    piriorty = json['piriorty'];
-    bloodType = json['blood_type'];
-    jaundiceRatio = json['jaundice_ratio'];
-    jaundiceStatu = json['jaundice_statu'];
-    dadId = json['dad_id'];
-    doctorId = json['doctor_id'];
-    createdAt = json['createdAt'];
+    id = json['id'].toString();
+    name = json['name'].toString();
+    berathDate = json['berath_date'].toString();
+    gender = json['gender'].toString();
+    entryDate = json['entry_date'].toString();
+    expectioOutDate = json['expectio_out _date'].toString();
+    outDate = json['out_date'].toString();
+    piriorty = json['piriorty'].toString();
+    bloodType = json['blood_type'].toString();
+    jaundiceRatio = json['jaundice_ratio'].toString();
+    jaundiceStatu = json['jaundice_statu'].toString();
+    dadId = json['dad_id'].toString();
+    doctorId = json['doctor_id'].toString();
+    createdAt = json['createdAt'].toString();
   }
 
   Map<String, dynamic> toJson() {

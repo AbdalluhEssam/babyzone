@@ -36,12 +36,9 @@ class _ControlScreenState extends State<ControlScreen> {
                 ageBaby: controller.children.berathDate.toString(),
                 facilitiesNameBaby: "${controller.children.doctorName}",
                 facilitiesPhoneBaby: "${controller.children.doctorPhone}",
-                durationOfSStayBaby: controller.children.outDate == null
-                    ? Jiffy("${DateTime.parse(controller.children.entryDate.toString())}")
-                        .fromNow()
-                    : Jiffy("${DateTime.parse(controller.children.entryDate.toString())}")
-                        .from(DateTime.parse(
-                            controller.children.outDate.toString())),
+                durationOfSStayBaby: Jiffy(
+                        "${DateTime.parse(controller.children.entryDate.toString())}")
+                    .fromNow(),
                 highHeartRateSensorBaby: "${controller.children.bmp}",
                 lowHeartRateSensorBaby: '${controller.children.bmp}',
                 temperatureRateSensorBaby: "${controller.children.bodyTemp}",

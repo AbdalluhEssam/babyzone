@@ -23,7 +23,7 @@ class ForgetPassword extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: AppColor.backgroundColor,
           title: Text(translateDataBase('هل نسيت كلمة السر', 'Forgot Password'),
-              style: Theme.of(context).textTheme.headline1),
+              style: Theme.of(context).textTheme.displayLarge),
           elevation: 0,
           centerTitle: true,
           leadingWidth: 50,

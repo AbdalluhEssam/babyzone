@@ -19,7 +19,7 @@ class VerfiyCodeSignUp extends StatelessWidget {
             "verification".tr,
             style: Theme.of(context)
                 .textTheme
-                .headline1
+                .displayLarge
                 ?.copyWith(color: AppColor.gray),
           ),
           elevation: 0,
@@ -45,14 +45,14 @@ class VerfiyCodeSignUp extends StatelessWidget {
                                 alignment: Alignment.center,
                                 child: Text(
                                   "parcheckcode2".tr,
-                                  style: Theme.of(context).textTheme.bodyText1,
+                                  style: Theme.of(context).textTheme.bodyLarge,
                                   textAlign: TextAlign.center,
                                 )),
                             Container(
                                 alignment: Alignment.center,
                                 child: Text(
                                   "${controller.email}",
-                                  style: Theme.of(context).textTheme.bodyText1,
+                                  style: Theme.of(context).textTheme.bodyLarge,
                                   textAlign: TextAlign.center,
                                 )),
                           ],

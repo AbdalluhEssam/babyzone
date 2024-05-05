@@ -8,7 +8,7 @@ class CustomTextTitleAuth extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title,
-      style: Theme.of(context).textTheme.headline2,
+      style: Theme.of(context).textTheme.displayMedium,
       textAlign: TextAlign.center,
     );
   }

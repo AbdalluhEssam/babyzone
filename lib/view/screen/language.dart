@@ -24,7 +24,7 @@ class Language extends GetView<LocaleController> {
             children: [
               Text(
                 "choose".tr,
-                style: Theme.of(context).textTheme.headline1,
+                style: Theme.of(context).textTheme.displayLarge,
               ),
               const SizedBox(
                 height: 30,

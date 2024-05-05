@@ -107,7 +107,6 @@ ThemeData themeArabic = ThemeData(
 
 class ThemeService {
   final litghTheme = ThemeData.light().copyWith(
-    useMaterial3: true,
     scaffoldBackgroundColor: AppColor.backgroundColor,
     cardColor: AppColor.primaryColor,
     floatingActionButtonTheme: const FloatingActionButtonThemeData(

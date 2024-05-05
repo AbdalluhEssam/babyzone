@@ -22,7 +22,7 @@ class SuccessSignUp extends StatelessWidget {
           "successsignup".tr,
           style: Theme.of(context)
               .textTheme
-              .headline1!
+              .displayLarge!
               .copyWith(color: AppColor.gray),
         ),
       ),

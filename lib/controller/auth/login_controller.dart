@@ -59,7 +59,7 @@ class LoginControllerImp extends LoginController {
       statusRequest = handlingData(response);
       if (StatusRequest.success == statusRequest) {
         if (response['status'] == "success") {
-          if(response['data']['users_approve'] != "0"){
+          if(response['data']['users_approve'].toString() != "0"){
 
             userModel = UserModel.fromJson(response['data']);
             myServices.sharedPreferences.setString("id", response['data']['users_id'].toString());
@@ -68,7 +68,7 @@ class LoginControllerImp extends LoginController {
             myServices.sharedPreferences.setString("password", password.text);
             myServices.sharedPreferences.setString("email", response['data']['users_email']);
             myServices.sharedPreferences.setString("image", response['data']['image']);
-            myServices.sharedPreferences.setString("phone", response['data']['users_phone']);
+            myServices.sharedPreferences.setString("phone", response['data']['users_phone'].toString());
             myServices.sharedPreferences.setString("approveName", response['data']['name']);
             myServices.sharedPreferences.setString("step", "2");
             Get.offNamed(AppRoute.homeScreen);

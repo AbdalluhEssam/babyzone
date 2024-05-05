@@ -20,7 +20,7 @@ class SuccessResetPassword extends StatelessWidget {
         backgroundColor: AppColor.backgroundColor,
         elevation: 0,
         title: Text("successresetpass".tr,
-            style: Theme.of(context).textTheme.headline1!),
+            style: Theme.of(context).textTheme.displayLarge!),
         leadingWidth: 50,
         leading: Padding(
           padding: const EdgeInsets.only(left: 10),

@@ -61,35 +61,35 @@ class LogModel {
         this.childId});
 
   LogModel.fromJson(Map<String, dynamic> json) {
-    id = json['id'];
-    name = json['name'];
-    berathDate = json['berath_date'];
-    gender = json['gender'];
-    entryDate = json['entry_date'];
-    expectioOutDate = json['expectio_out _date'];
-    outDate = json['out_date'];
-    piriorty = json['piriorty'];
-    bloodType = json['blood_type'];
-    jaundiceRatio = json['jaundice_ratio'];
-    jaundiceStatu = json['jaundice_statu'];
-    dadId = json['dad_id'];
-    doctorId = json['doctor_id'];
-    createdAt = json['createdAt'];
-    incubationId = json['incubation_id'];
-    usersId = json['users_id'];
-    usersName = json['users_name'];
-    usersEmail = json['users_email'];
-    usersPassword = json['users_password'];
-    usersPhone = json['users_phone'];
-    image = json['image'];
-    usersVerfiycode = json['users_verfiycode'];
-    usersApprove = json['users_approve'];
-    usersCreate = json['users_create'];
-    logId = json['log_id'];
-    logLevel = json['log_level'];
-    logAction = json['log_action'];
-    childId = json['child_id'];
-    createAt = json['createAt'];
+    id = json['id'].toString();
+    name = json['name'].toString();
+    berathDate = json['berath_date'].toString();
+    gender = json['gender'].toString();
+    entryDate = json['entry_date'].toString();
+    expectioOutDate = json['expectio_out _date'].toString();
+    outDate = json['out_date'].toString();
+    piriorty = json['piriorty'].toString();
+    bloodType = json['blood_type'].toString();
+    jaundiceRatio = json['jaundice_ratio'].toString();
+    jaundiceStatu = json['jaundice_statu'].toString();
+    dadId = json['dad_id'].toString();
+    doctorId = json['doctor_id'].toString();
+    createdAt = json['createdAt'].toString();
+    incubationId = json['incubation_id'].toString();
+    usersId = json['users_id'].toString();
+    usersName = json['users_name'].toString();
+    usersEmail = json['users_email'].toString();
+    usersPassword = json['users_password'].toString();
+    usersPhone = json['users_phone'].toString();
+    image = json['image'].toString();
+    usersVerfiycode = json['users_verfiycode'].toString();
+    usersApprove = json['users_approve'].toString();
+    usersCreate = json['users_create'].toString();
+    logId = json['log_id'].toString();
+    logLevel = json['log_level'].toString();
+    logAction = json['log_action'].toString();
+    childId = json['child_id'].toString();
+    createAt = json['createAt'].toString();
   }
 
   Map<String, dynamic> toJson() {

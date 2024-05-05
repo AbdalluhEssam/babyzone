@@ -25,7 +25,7 @@ class ResetPassword extends StatelessWidget {
             "reset".tr,
             style: Theme.of(context)
                 .textTheme
-                .headline1
+                .displayLarge
                 ,
           ),
           elevation: 0,

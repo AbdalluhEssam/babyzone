@@ -25,17 +25,17 @@ class UsersModel {
         this.name});
 
   UsersModel.fromJson(Map<String, dynamic> json) {
-    usersId = json['users_id'];
-    usersName = json['users_name'];
-    usersEmail = json['users_email'];
-    usersPassword = json['users_password'];
-    usersPhone = json['users_phone'];
-    image = json['image'];
-    usersVerfiycode = json['users_verfiycode'];
-    usersApprove = json['users_approve'];
-    usersCreate = json['users_create'];
-    id = json['id'];
-    name = json['name'];
+    usersId = json['users_id'].toString();
+    usersName = json['users_name'].toString();
+    usersEmail = json['users_email'].toString();
+    usersPassword = json['users_password'].toString();
+    usersPhone = json['users_phone'].toString();
+    image = json['image'].toString();
+    usersVerfiycode = json['users_verfiycode'].toString();
+    usersApprove = json['users_approve'].toString();
+    usersCreate = json['users_create'].toString();
+    id = json['id'].toString();
+    name = json['name'].toString();
   }
 
   Map<String, dynamic> toJson() {
@@ -62,8 +62,8 @@ class PermissionModel {
   PermissionModel({this.id, this.name});
 
   PermissionModel.fromJson(Map<String, dynamic> json) {
-    id = json['id'];
-    name = json['name'];
+    id = json['id'].toString();
+    name = json['name'].toString();
   }
 
   Map<String, dynamic> toJson() {
@@ -126,28 +126,28 @@ class UserModel {
         this.createdAt});
 
   UserModel.fromJson(Map<String, dynamic> json) {
-    usersId = json['users_id'];
-    usersName = json['users_name'];
-    usersEmail = json['users_email'];
-    usersPassword = json['users_password'];
-    usersPhone = json['users_phone'];
-    usersVerfiycode = json['users_verfiycode'];
-    usersApprove = json['users_approve'];
-    usersCreate = json['users_create'];
-    employeesId = json['employees_id'];
-    employeesName = json['employees_name'];
-    employeesAge = json['employees_age'];
-    nationalid = json['nationalid'];
-    employeesPhone = json['employees_phone'];
-    employeesPhoto = json['employees_photo'];
-    employeesStudy = json['employees_study'];
-    jobDescription = json['job_description'];
-    startData = json['start_data'];
-    endData = json['end_data'];
-    employeesSalary = json['employees_salary'];
-    status = json['status'];
-    userId = json['user_id'];
-    createdAt = json['createdAt'];
+    usersId = json['users_id'].toString();
+    usersName = json['users_name'].toString();
+    usersEmail = json['users_email'].toString();
+    usersPassword = json['users_password'].toString();
+    usersPhone = json['users_phone'].toString();
+    usersVerfiycode = json['users_verfiycode'].toString();
+    usersApprove = json['users_approve'].toString();
+    usersCreate = json['users_create'].toString();
+    employeesId = json['employees_id'].toString();
+    employeesName = json['employees_name'].toString();
+    employeesAge = json['employees_age'].toString();
+    nationalid = json['nationalid'].toString();
+    employeesPhone = json['employees_phone'].toString();
+    employeesPhoto = json['employees_photo'].toString();
+    employeesStudy = json['employees_study'].toString();
+    jobDescription = json['job_description'].toString();
+    startData = json['start_data'].toString();
+    endData = json['end_data'].toString();
+    employeesSalary = json['employees_salary'].toString();
+    status = json['status'].toString();
+    userId = json['user_id'].toString();
+    createdAt = json['createdAt'].toString();
   }
 
   Map<String, dynamic> toJson() {
@@ -238,33 +238,33 @@ class ProfileModel {
         this.usersCreate});
 
   ProfileModel.fromJson(Map<String, dynamic> json) {
-    model = json['model'];
-    regular = json['regular'];
-    years = json['years'];
-    employeesId = json['employees_id'];
-    employeesName = json['employees_name'];
-    employeesAge = json['employees_age'];
-    nationalid = json['nationalid'];
-    employeesPhone = json['employees_phone'];
-    employeesPhoto = json['employees_photo'];
-    employeesStudy = json['employees_study'];
-    jobDescription = json['job_description'];
-    startData = json['start_data'];
-    endData = json['end_data'];
-    employeesSalary = json['employees_salary'];
-    status = json['status'];
-    userId = json['user_id'];
-    createdAt = json['createdAt'];
-    id = json['id'];
-    name = json['name'];
-    usersId = json['users_id'];
-    usersName = json['users_name'];
-    usersEmail = json['users_email'];
-    usersPassword = json['users_password'];
-    usersPhone = json['users_phone'];
-    usersVerfiycode = json['users_verfiycode'];
-    usersApprove = json['users_approve'];
-    usersCreate = json['users_create'];
+    model = json['model'].toString();
+    regular = json['regular'].toString();
+    years = json['years'].toString();
+    employeesId = json['employees_id'].toString();
+    employeesName = json['employees_name'].toString();
+    employeesAge = json['employees_age'].toString();
+    nationalid = json['nationalid'].toString();
+    employeesPhone = json['employees_phone'].toString();
+    employeesPhoto = json['employees_photo'].toString();
+    employeesStudy = json['employees_study'].toString();
+    jobDescription = json['job_description'].toString();
+    startData = json['start_data'].toString();
+    endData = json['end_data'].toString();
+    employeesSalary = json['employees_salary'].toString();
+    status = json['status'].toString();
+    userId = json['user_id'].toString();
+    createdAt = json['createdAt'].toString();
+    id = json['id'].toString();
+    name = json['name'].toString();
+    usersId = json['users_id'].toString();
+    usersName = json['users_name'].toString();
+    usersEmail = json['users_email'].toString();
+    usersPassword = json['users_password'].toString();
+    usersPhone = json['users_phone'].toString();
+    usersVerfiycode = json['users_verfiycode'].toString();
+    usersApprove = json['users_approve'].toString();
+    usersCreate = json['users_create'].toString();
   }
 
   Map<String, dynamic> toJson() {
