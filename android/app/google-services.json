@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "454190238950",
+    "project_id": "baby-zone-ad0c6",
+    "storage_bucket": "baby-zone-ad0c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454190238950:android:ec18d1ac73cfe37c19bf27",
+        "android_client_info": {
+          "package_name": "com.example.babyzone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCkw3fFdSl7IWLC_A1FMA_kiviDIJl_TM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
