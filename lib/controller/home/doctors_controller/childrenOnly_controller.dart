@@ -1,4 +1,5 @@
 // ignore_for_file: avoid_print, unused_local_variable
+import 'dart:async';
 import 'dart:developer';
 import 'package:babyzone/data/datasource/remote/children_data.dart';
 import 'package:babyzone/data/model/children_model.dart';
@@ -50,12 +51,19 @@ class ChildrenOnlyControllerImp extends ChildrenOnlyController {
     return age.toString();
   }
 
+  late Timer _timer;
+
   @override
   void onInit() {
+    statusRequest = StatusRequest.loading;
+
     idChild = Get.arguments['idChild'];
     children = ChildrenModel();
     initialData();
     getData();
+
+    _timer = Timer.periodic(Duration(seconds: 10), (timer) => getData());
+
     super.onInit();
   }
 
@@ -66,7 +74,7 @@ class ChildrenOnlyControllerImp extends ChildrenOnlyController {
 
   @override
   getData() {
-    statusRequest = StatusRequest.loading;
+    // statusRequest = StatusRequest.loading;
     update();
     childrenData.onlyData(idChild.toString()).then((value) {
       log("========================================================================$value");
@@ -74,7 +82,20 @@ class ChildrenOnlyControllerImp extends ChildrenOnlyController {
       if (StatusRequest.success == statusRequest) {
         if (value['status'] == "success") {
           // List childrens = value['data'];
+          children = ChildrenModel();
           children = ChildrenModel.fromJson(value['data']);
+          fanStatus = int.parse(children.fanStatues!);
+          if (fanStatus == 1) {
+            fanStatusBool = true;
+          } else {
+            fanStatusBool = false;
+          }
+          ledStatus = int.parse(children.ledStatus!);
+          if (ledStatus == 1) {
+            ledStatusBool = true;
+          } else {
+            ledStatusBool = false;
+          }
           update();
         } else {
           statusRequest = StatusRequest.failure;
@@ -87,5 +108,67 @@ class ChildrenOnlyControllerImp extends ChildrenOnlyController {
     });
 
     update();
+  }
+
+  late int fanStatus;
+  late bool fanStatusBool;
+
+  changeFan(bool a) {
+    if (a == true) {
+      fanStatus = 1;
+      fanStatusBool = true;
+      editLED(1.toString(), fanStatus, 1);
+      update();
+    } else {
+      fanStatus = 0;
+      fanStatusBool = false;
+      editLED(1.toString(), fanStatus, 1);
+      update();
+    }
+  }
+
+  late int ledStatus;
+  late bool ledStatusBool;
+
+  changeLed(bool a) {
+    if (a == true) {
+      ledStatus = 1;
+      ledStatusBool = true;
+      editLED(1.toString(), 1, ledStatus);
+      update();
+    } else {
+      ledStatus = 0;
+      ledStatusBool = false;
+      editLED(1.toString(), 1, ledStatus);
+      update();
+    }
+  }
+
+  editLED(id, fanStatues, ledStatus) {
+    // statusRequest = StatusRequest.loading;
+    update();
+    childrenData.editLED(id, fanStatues, ledStatus).then((value) {
+      log("========================================================================$value");
+      statusRequest = handlingData(value);
+      if (StatusRequest.success == statusRequest) {
+        if (value['status'] == "success") {
+          getData();
+        } else {
+          statusRequest = StatusRequest.failure;
+          update();
+        }
+      }
+    }).catchError((onError) {
+      log("Error=== : ===$onError");
+      update();
+    });
+
+    update();
+  }
+
+  @override
+  void dispose() {
+    _timer.cancel();
+    super.dispose();
   }
 }

@@ -19,7 +19,19 @@ class ChildrenModel {
   String? dadId;
   String? doctorId;
   String? createdAt;
+  String? incubationId;
   String? bloodName;
+  String? minAirTemp;
+  String? maxAirTemp;
+  String? airTemp;
+  String? minAirHum;
+  String? maxAirHum;
+  String? airHum;
+  String? valveStatues;
+  String? heaterStatues;
+  String? fanStatues;
+  String? sysFanStatues;
+  String? ledStatus;
   String? bodyTemp;
   String? atmosphierTemp;
   String? bmp;
@@ -50,7 +62,19 @@ class ChildrenModel {
         this.dadId,
         this.doctorId,
         this.createdAt,
+        this.incubationId,
         this.bloodName,
+        this.minAirTemp,
+        this.maxAirTemp,
+        this.airTemp,
+        this.minAirHum,
+        this.maxAirHum,
+        this.airHum,
+        this.valveStatues,
+        this.heaterStatues,
+        this.fanStatues,
+        this.sysFanStatues,
+        this.ledStatus,
         this.bodyTemp,
         this.atmosphierTemp,
         this.bmp,
@@ -81,7 +105,19 @@ class ChildrenModel {
     dadId = json['dad_id'].toString();
     doctorId = json['doctor_id'].toString();
     createdAt = json['createdAt'].toString();
+    incubationId = json['incubation_id'].toString();
     bloodName = json['blood_name'].toString();
+    minAirTemp = json['min_air_temp'].toString();
+    maxAirTemp = json['max_air_temp'].toString();
+    airTemp = json['air_temp'].toString();
+    minAirHum = json['min_air_hum'].toString();
+    maxAirHum = json['max_air_hum'].toString();
+    airHum = json['air_hum'].toString();
+    valveStatues = json['valve_statues'].toString();
+    heaterStatues = json['heater_statues'].toString();
+    fanStatues = json['fan_statues'].toString();
+    sysFanStatues = json['sys_fan_statues'].toString();
+    ledStatus = json['led_status'].toString();
     bodyTemp = json['body_temp'].toString();
     atmosphierTemp = json['atmosphier_temp'].toString();
     bmp = json['bmp'].toString();
@@ -93,36 +129,48 @@ class ChildrenModel {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data['dadPhone'] = dadPhone;
-    data['doctorPhone'] = doctorPhone;
-    data['dadPhoto'] = dadPhoto;
-    data['doctorPhoto'] = doctorPhoto;
-    data['dadName'] = dadName;
-    data['doctorName'] = doctorName;
-    data['id'] = id;
-    data['name'] = name;
-    data['berath_date'] = berathDate;
-    data['gender'] = gender;
-    data['entry_date'] = entryDate;
-    data['expectio_out _date'] = expectioOutDate;
-    data['out_date'] = outDate;
-    data['piriorty'] = piriorty;
-    data['blood_type'] = bloodType;
-    data['jaundice_ratio'] = jaundiceRatio;
-    data['jaundice_statu'] = jaundiceStatu;
-    data['dad_id'] = dadId;
-    data['doctor_id'] = doctorId;
-    data['createdAt'] = createdAt;
-    data['blood_name'] = bloodName;
-    data['body_temp'] = bodyTemp;
-    data['atmosphier_temp'] = atmosphierTemp;
-    data['bmp'] = bmp;
-    data['oxygen'] = oxygen;
-    data['wight'] = wight;
-    data['entry_reason'] = entryReason;
-    data['out_reason'] = outReason;
-    data['child_id'] = childId;
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['dadPhone'] = this.dadPhone;
+    data['doctorPhone'] = this.doctorPhone;
+    data['dadPhoto'] = this.dadPhoto;
+    data['doctorPhoto'] = this.doctorPhoto;
+    data['dadName'] = this.dadName;
+    data['doctorName'] = this.doctorName;
+    data['id'] = this.id;
+    data['name'] = this.name;
+    data['berath_date'] = this.berathDate;
+    data['gender'] = this.gender;
+    data['entry_date'] = this.entryDate;
+    data['expectio_out _date'] = this.expectioOutDate;
+    data['out_date'] = this.outDate;
+    data['piriorty'] = this.piriorty;
+    data['blood_type'] = this.bloodType;
+    data['jaundice_ratio'] = this.jaundiceRatio;
+    data['jaundice_statu'] = this.jaundiceStatu;
+    data['dad_id'] = this.dadId;
+    data['doctor_id'] = this.doctorId;
+    data['createdAt'] = this.createdAt;
+    data['incubation_id'] = this.incubationId;
+    data['blood_name'] = this.bloodName;
+    data['min_air_temp'] = this.minAirTemp;
+    data['max_air_temp'] = this.maxAirTemp;
+    data['air_temp'] = this.airTemp;
+    data['min_air_hum'] = this.minAirHum;
+    data['max_air_hum'] = this.maxAirHum;
+    data['air_hum'] = this.airHum;
+    data['valve_statues'] = this.valveStatues;
+    data['heater_statues'] = this.heaterStatues;
+    data['fan_statues'] = this.fanStatues;
+    data['sys_fan_statues'] = this.sysFanStatues;
+    data['led_status'] = this.ledStatus;
+    data['body_temp'] = this.bodyTemp;
+    data['atmosphier_temp'] = this.atmosphierTemp;
+    data['bmp'] = this.bmp;
+    data['oxygen'] = this.oxygen;
+    data['wight'] = this.wight;
+    data['entry_reason'] = this.entryReason;
+    data['out_reason'] = this.outReason;
+    data['child_id'] = this.childId;
     return data;
   }
 }

@@ -42,5 +42,6 @@ class AppLink {
   static const String children = "$serverLink/children/view.php";
   static const String childrenOnly = "$serverLink/children/viewonly.php";
   static const String childrenList = "$serverLink/children/childlist.php";
+  static const String editLED = "$serverLink/incubation/edit.php";
 //================================== END ===============================//
 }

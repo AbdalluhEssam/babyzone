@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../Constant.dart';
 
 class DetailsAndControlsSensorsOfBaby extends StatefulWidget {
@@ -18,6 +17,7 @@ class DetailsAndControlsSensorsOfBaby extends StatefulWidget {
   final String diaperRateSensorBaby;
   final String weightSensorBaby;
   final void Function() onPressed;
+
 
   const DetailsAndControlsSensorsOfBaby(
       {super.key,
@@ -349,6 +349,7 @@ class _DetailsAndControlsSensorsOfBabyState
           const SizedBox(
             height: 20,
           ),
+
           Text("CONTROLS", style: bigBlueFont),
           const SizedBox(
             height: 15,
