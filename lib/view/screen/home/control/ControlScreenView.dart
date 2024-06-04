@@ -3,6 +3,7 @@ import 'package:babyzone/core/class/handlingdataview.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:jiffy/jiffy.dart';
+import '../../../widget/fl_linner.dart';
 import 'ControlScreenController.dart';
 import 'SettingScreenController.dart';
 
@@ -38,7 +39,6 @@ class _ControlScreenState extends State<ControlScreen> {
               nameSettingSwitchButton: "Fan",
               initialValue: controller.fanStatusBool,
               onChanged: (value) {
-
                 setState(() {
                   controller.changeFan(value);
                 });
@@ -84,6 +84,10 @@ class _ControlScreenState extends State<ControlScreen> {
                     "${controller.children.jaundiceRatio}",
                 diaperRateSensorBaby: "${controller.children.jaundiceStatu}",
                 weightSensorBaby: "${controller.children.wight}",
+                bpm: SizedBox(
+                    height: 25,
+                    width: 100,
+                    child: ECGChart(ecgData: controller.ecgData)),
               ),
             )),
       ),

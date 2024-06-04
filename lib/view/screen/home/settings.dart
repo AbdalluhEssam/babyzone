@@ -1,3 +1,4 @@
+import 'package:babyzone/view/widget/fl_linner.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -134,6 +135,7 @@ class Settings extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
+
           const Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,

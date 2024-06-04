@@ -17,6 +17,7 @@ class DetailsAndControlsSensorsOfBaby extends StatefulWidget {
   final String diaperRateSensorBaby;
   final String weightSensorBaby;
   final void Function() onPressed;
+  final Widget bpm;
 
 
   const DetailsAndControlsSensorsOfBaby(
@@ -35,7 +36,7 @@ class DetailsAndControlsSensorsOfBaby extends StatefulWidget {
       required this.diaperRateSensorBaby,
       required this.weightSensorBaby,
       required this.lowHeartRateSensorBaby,
-      required this.onPressed});
+      required this.onPressed, required this.bpm});
 
   @override
   State<DetailsAndControlsSensorsOfBaby> createState() =>
@@ -400,13 +401,19 @@ class _DetailsAndControlsSensorsOfBabyState
                         ),
                         Text("HEART RATE : ", style: smallBlueFont),
                         const Spacer(),
-                        SizedBox(
-                          //color: Colors.green,
-                          width: MediaQuery.of(context).size.width * 0.33,
-                          child: Text(widget.highHeartRateSensorBaby,
-                              textAlign: TextAlign.end,
-                              overflow: TextOverflow.ellipsis,
-                              style: smallBlackFont),
+
+                        Row(
+                          children: [
+                            SizedBox(
+                              //color: Colors.green,
+                              width: MediaQuery.of(context).size.width * 0.20,
+                              child: Text(widget.highHeartRateSensorBaby,
+                                  textAlign: TextAlign.center,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: smallBlackFont),
+                            ),
+                            widget.bpm,
+                          ],
                         ),
                       ],
                     ),

@@ -1,8 +1,10 @@
 // ignore_for_file: avoid_print, unused_local_variable
 import 'dart:async';
 import 'dart:developer';
+import 'dart:math' hide log;
 import 'package:babyzone/data/datasource/remote/children_data.dart';
 import 'package:babyzone/data/model/children_model.dart';
+import 'package:fl_chart/fl_chart.dart';
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 import '../../../core/class/statusrequest.dart';
@@ -50,7 +52,23 @@ class ChildrenOnlyControllerImp extends ChildrenOnlyController {
     statusRequest = StatusRequest.success;
     return age.toString();
   }
+  late List<FlSpot> ecgData;
 
+  List<FlSpot> generateSampleECGData(double bpm) {
+    List<FlSpot> data = [];
+    double interval = 60 / bpm; // seconds per beat
+    double amplitude = 2.0; // Arbitrary amplitude for simulation
+    double noiseLevel = 0.05; // Noise level for realism
+
+    for (int i = 0; i < 1000; i++) {
+      double x = i.toDouble() / 100.0; // Convert to seconds
+      double y = amplitude * sin(2 * pi * x / interval) +
+          noiseLevel * (Random().nextDouble() - 0.5);
+      data.add(FlSpot(x, y));
+    }
+    return data;
+  }
+  
   late Timer _timer;
 
   @override
@@ -61,6 +79,7 @@ class ChildrenOnlyControllerImp extends ChildrenOnlyController {
     children = ChildrenModel();
     initialData();
     getData();
+
 
     _timer = Timer.periodic(Duration(seconds: 10), (timer) => getData());
 
@@ -96,6 +115,7 @@ class ChildrenOnlyControllerImp extends ChildrenOnlyController {
           } else {
             ledStatusBool = false;
           }
+          ecgData = generateSampleECGData(double.parse(children.bmp.toString())); // Example BPM
           update();
         } else {
           statusRequest = StatusRequest.failure;
@@ -117,12 +137,12 @@ class ChildrenOnlyControllerImp extends ChildrenOnlyController {
     if (a == true) {
       fanStatus = 1;
       fanStatusBool = true;
-      editLED(1.toString(), fanStatus, 1);
+      editLED(1.toString(), fanStatus, ledStatus);
       update();
     } else {
       fanStatus = 0;
       fanStatusBool = false;
-      editLED(1.toString(), fanStatus, 1);
+      editLED(1.toString(), fanStatus, ledStatus);
       update();
     }
   }
@@ -134,12 +154,12 @@ class ChildrenOnlyControllerImp extends ChildrenOnlyController {
     if (a == true) {
       ledStatus = 1;
       ledStatusBool = true;
-      editLED(1.toString(), 1, ledStatus);
+      editLED(1.toString(), fanStatus, ledStatus);
       update();
     } else {
       ledStatus = 0;
       ledStatusBool = false;
-      editLED(1.toString(), 1, ledStatus);
+      editLED(1.toString(), fanStatus, ledStatus);
       update();
     }
   }

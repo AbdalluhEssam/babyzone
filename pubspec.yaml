@@ -74,6 +74,7 @@ dependencies:
   flutter_otp_text_field: ^1.1.0
   get_storage: ^2.1.1
   flutter_launcher_icons: ^0.13.1
+  fl_chart: ^0.68.0
 
 dev_dependencies:
   flutter_test:

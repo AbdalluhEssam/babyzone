@@ -1,5 +1,8 @@
 // import 'package:firebase_messaging/firebase_messaging.dart';
+import 'dart:math';
+
 import 'package:babyzone/controller/home/homescreen_controller.dart';
+import 'package:fl_chart/fl_chart.dart';
 import 'package:get/get.dart';
 import '../../core/constant/apptheme.dart';
 import '../../core/constant/routes.dart';
@@ -23,6 +26,10 @@ class SettingsController extends GetxController {
       update();
     }
   }
+
+
+
+
   @override
   void onInit() {
     id = myServices.sharedPreferences.getString("id")!;
