@@ -47,11 +47,7 @@ class DefaultFirebaseOptions {
 
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: "AIzaSyDCkw3fFdSl7IWLC_A1FMA_kiviDIJl_TM",
-    appId: "1:454190238950:android:ec18d1ac73cfe37c19bf27",
-    messagingSenderId: "454190238950",
-    projectId: "baby-zone-ad0c6",
-    storageBucket: 'baby-zone-ad0c6.appspot.com',
+ // add connection firebase 
   );
 
 }
