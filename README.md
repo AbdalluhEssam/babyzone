@@ -31,25 +31,25 @@
 Here’s a glimpse of what Baby Zone offers:
 
 ### **1. System Overview**
-![System Overview](assets/system_overview.png)
+![System Overview](assets/system_overview.jpg)
 *A schematic overview showcasing how the app and hardware communicate seamlessly.*
 
 ---
 
 ### **2. Mobile App Interface**
-![App Interface](assets/app_interface.png)
+![App Interface](assets/app_interface.jpg)
 *User-friendly design tailored for parents and caregivers.*
 
 ---
 
 ### **3. Advanced PCB Design**
-![PCB Design](assets/pcb_design.png)
+![PCB Design](assets/pcb_design.jpg)
 *High-precision PCB with sensor integration for real-time monitoring.*
 
 ---
 
 ### **4. Real-Time Monitoring**
-![Baby Details](assets/baby_details.png)
+![Baby Details](assets/baby_details.jpg)
 *Monitor your baby's health metrics directly from the app.*
 
 ---
