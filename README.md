@@ -31,25 +31,25 @@
 Here’s a glimpse of what Baby Zone offers:
 
 ### **1. System Overview**
-![System Overview](https://via.placeholder.com/800x400.png?text=System+Overview+Image)
+![System Overview](assets/system_overview.png)
 *A schematic overview showcasing how the app and hardware communicate seamlessly.*
 
 ---
 
 ### **2. Mobile App Interface**
-![App Interface](https://via.placeholder.com/800x400.png?text=Mobile+App+Interface)
+![App Interface](assets/app_interface.png)
 *User-friendly design tailored for parents and caregivers.*
 
 ---
 
 ### **3. Advanced PCB Design**
-![PCB Design](https://via.placeholder.com/800x400.png?text=PCB+Design+Image)
+![PCB Design](assets/pcb_design.png)
 *High-precision PCB with sensor integration for real-time monitoring.*
 
 ---
 
 ### **4. Real-Time Monitoring**
-![Baby Details](https://via.placeholder.com/800x400.png?text=Baby+Details+Interface)
+![Baby Details](assets/baby_details.png)
 *Monitor your baby's health metrics directly from the app.*
 
 ---
@@ -89,28 +89,54 @@ Follow these steps to set up and run the app locally:
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/AbdalluhEssam/babyzone.git
+   ```
 
-   Navigate to the project directory:
+2. **Navigate to the project directory**:
+   ```bash
+   cd babyzone
+   ```
 
-bash
-Copy
-cd babyzone
-Install dependencies:
+3. **Install dependencies**:
+   ```bash
+   flutter pub get
+   ```
 
-bash
-Copy
-flutter pub get
-Run the app:
+4. **Run the app**:
+   ```bash
+   flutter run
+   ```
 
-bash
-Copy
-flutter run
-🌐 Connect with Me
+---
+
+## 🌐 **Connect with Me**
 If you have any questions, suggestions, or just want to connect, feel free to reach out!
 
-<p align="left"> <a href="https://twitter.com/abdalluh_essam2" target="blank"> <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="Twitter" height="30" width="40" /> </a> <a href="https://linkedin.com/in/abdalluh-essam-b71b56216" target="blank"> <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" /> </a> <a href="https://fb.com/abdallh2002" target="blank"> <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="Facebook" height="30" width="40" /> </a> <a href="https://instagram.com/abdalluh_essam_22" target="blank"> <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="Instagram" height="30" width="40" /> </a> </p>
-☕ Support Me
+<p align="left">
+  <a href="https://twitter.com/abdalluh_essam2" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="Twitter" height="30" width="40" />
+  </a>
+  <a href="https://linkedin.com/in/abdalluh-essam-b71b56216" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" />
+  </a>
+  <a href="https://fb.com/abdallh2002" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="Facebook" height="30" width="40" />
+  </a>
+  <a href="https://instagram.com/abdalluh_essam_22" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="Instagram" height="30" width="40" />
+  </a>
+</p>
+
+---
+
+## ☕ **Support Me**
 If you find this project interesting or useful, consider supporting me by buying me a coffee!
 
-<a href="https://www.buymeacoffee.com/abdallhesam"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="Buy Me a Coffee" /> </a>
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=abdalluhessam&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" /> </p> ```
+<a href="https://www.buymeacoffee.com/abdallhesam">
+  <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="Buy Me a Coffee" />
+</a>
+
+---
+
+<p align="center"> 
+  <img src="https://komarev.com/ghpvc/?username=abdalluhessam&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" /> 
+</p>
